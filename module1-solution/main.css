@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+
+ body{
+   margin:0;
+   padding:0;
+   font-family: sans-serif;
+ }
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 2px;
+}
+.box{
+  background-color: grey;
+  box-sizing: border-box;
+  border:3px solid black;
+  margin:5px;
+}
+.content{
+  background-color: grey;
+  box-sizing: border-box;
+  float:column;
+  padding:10px;
+}
+.chicken{
+  background-color: pink;
+  box-sizing: border-box;
+  border:3px solid black;
+  width:20%;
+  text-align: center;
+  float:right;
+  margin-right:0px;
+  margin-top: 0;
+  position:relative;
+}
+.beaf{
+  background-color: red;
+  box-sizing: border-box;
+  border:3px solid black;
+  width:20%;
+  text-align: center;
+  float:right;
+  margin-right:0px;
+  margin-top: 0;
+  position:relative;
+}
+.sushi{
+  background-color: yellow;
+  box-sizing: border-box;
+  border:3px solid black;
+  width:20%;
+  text-align: center;
+  float:right;
+  margin-right:0px;
+  margin-top: 0;
+  position:relative;
+}
+
+/**************Large Device************/
+@media(min-width: 992px){
+  .col-lg-4{
+    width:33.33%;
+    float:left;
+  }
+}
+
+/**************medium Device************/
+@media(min-width: 768px) and (max-width: 991px){
+  .col-md-6{
+    width:50%;
+    float:left;
+  }
+  .col-md-12{
+    width:100%;
+    float:left;
+  }
+}
+
+/*****************Small Device**************/
+@media(min-width:0px)and (max-width:767px){
+  .col-sm-12{
+    width:100%;
+    float:left;
+  }
+}
