@@ -1,8 +1,18 @@
-var name = window.prompt("Enter your name: ");
+(function () {
+	
+  var names = ["Yaakov", "John", "Amar", "Sankar", "Ravi", "Joy", "Frank", "Larry", "Paula", "Johny"];
 
-if(name[0]=="j" || name[0]=="J"){
-	console.log("Goodbye "+ name);
+for(var i=0; i<names.length; i++){
+	var firstLetter = name[0].charAt(0).toLowerCase();
+
+	if(firstLetter==="j"){
+	byeSpeaker(names[i]);
+   }
+    else{
+	helloSpeaker(names[i]);
+  }
 }
-else{
-	console.log("Hello "+name);
-}
+
+
+})();
+
